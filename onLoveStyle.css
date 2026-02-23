@@ -1,9 +1,11 @@
 body{
     width: 100%;
     color: #686868;
-    padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
+    padding: 0p;
+    margin: 0;
+
 }
+
 header{
     background-color: #FFEEEE;
     width: 100%;
@@ -12,8 +14,6 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-left: 5%;
-    padding-right: 5%;
 }
 .contenidoH{
     display: flex;
@@ -21,7 +21,60 @@ header{
     width: 40%;
     justify-content: space-around;
     align-items: center;
+    padding-right: 5px;
 }
 .logo{
     align-content:center ;
+    padding-left: 50px;
+    padding-right: 5px;
+}
+.inicio a{
+    color: #686868;
+    border-radius: 20px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ff2c55;
+    background-color: #ff2c5623;
+    text-decoration: none;
+}
+.regi a{
+    color:white;
+    background-color: #ff2c55;
+    border-radius: 20px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ff2c55;
+}
+
+
+
+.hero{
+    height: 70vh;
+    width: 100%;
+    background-image: url(imagenes/moving-up-elegance-female-cute-bride.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    
+}
+.degradado{
+    background: linear-gradient(rgba(255, 255, 255, 0),#686868 );
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h2{
+    color: #ff2c55;
+    margin:0;
+    font-family: "Poppins",sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size:48px;
+}
+.degradado h2{
+    font-size:72px;
 }
