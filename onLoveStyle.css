@@ -3,17 +3,18 @@ body{
     color: #686868;
     padding: 0p;
     margin: 0;
-
+    font-family: "Mulish", sans-serif;
+    font-size: 20px;
 }
-
 header{
     background-color: #FFEEEE;
     width: 100%;
-    height: 100px;
+    height: 15vh;
     align-content: center;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    font-size: 15px;
 }
 .contenidoH{
     display: flex;
@@ -49,7 +50,7 @@ header{
 
 
 .hero{
-    height: 70vh;
+    height: 85vh;
     width: 100%;
     background-image: url(imagenes/moving-up-elegance-female-cute-bride.jpg);
     background-repeat: no-repeat;
@@ -61,7 +62,7 @@ header{
 .degradado{
     background: linear-gradient(rgba(255, 255, 255, 0),#686868 );
     width: 100%;
-    height: 70vh;
+    height: 85vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -77,4 +78,151 @@ h2{
 }
 .degradado h2{
     font-size:72px;
+}
+.frase{
+    color: white
+}
+.registroBoton a{
+    display: flex;
+    background-color: #ff2c55;
+    border-radius: 20px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ff2c55;
+    width: 100px;
+    height: 8vh;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+}
+
+.titulo{
+    display: flex;
+    width: 100%;
+    height: 15vh;
+    background-color: #FFEEEE;
+    align-items: center;
+    justify-content: center;
+}
+.subtitulo{
+    color: #686868;
+    align-self: center;
+}
+.funcion{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.contenidoF{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.f1{
+    background: linear-gradient(white,#FFEEEE );
+}
+.f2{
+    background-color: #FFEEEE;
+}
+.f3{
+    background: linear-gradient(#FFEEEE,white );
+}
+.imagen{
+    height: 60vh;
+    width: 30%;
+    background-color: #ff2c55;
+    border-radius: 50px;
+}
+.descripcion{
+    align-self: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/*Como funciona*/
+.comoFun{
+    height: 100vh;
+    width: 100%;
+}
+.comoFunTitulo{
+    background-color: white;
+}
+.contenedorCF{
+    display: flex;
+    flex-direction: row;
+    padding-top: 10vh;
+}
+.imagenComo{
+    width: 287px;
+    height: 287px;
+    background-color: #ff2c55;
+    border-radius: 50px;
+    align-self: center;
+}
+.paso{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+}
+
+/*Opiniones*/
+
+.opiniones{
+    width: 100%;
+    height: 100vh;
+}
+.contenedorOp{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20vh;
+}
+.Resenha{
+    width: 287px;
+    height: 287px;
+    background-color:aqua;
+    border-radius: 50px;
+
+}
+.foto{
+    height: 50%;
+}
+.coment{
+    display: flex;
+    background-color: #ff2c55;
+    color: white;
+    height: 40%;
+    border-bottom-right-radius: 50px;
+    font-size:medium;
+    padding: 5% 5% 5% 5%;
+    align-items: center;
+    justify-content: center;
+}
+.shvetsa{
+    background-image: url(imagenes/pexels-shvetsa-3727541.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.olly{
+    background-image: url(imagenes/pexels-olly-3764197.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:bottom;
+}
+
+/*Call to action*/
+.callAct{
+    margin: 10% 10% 10% 10%;
+    background-color: #FFEEEE;
+    border-color: #F5D9D9;
+    border-radius: 50px;
+    border-width: 2px;
+    border-style: solid;
 }
