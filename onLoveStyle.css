@@ -31,23 +31,25 @@ header{
 }
 .inicio a{
     color: #686868;
-    border-radius: 20px;
+    border-radius: 5px;
     border-width: 1px;
     border-style: solid;
     border-color: #ff2c55;
     background-color: #ff2c5623;
     text-decoration: none;
+    padding: 5px 5px 5px 5px;
 }
 .regi a{
     color:white;
     background-color: #ff2c55;
-    border-radius: 20px;
+    border-radius: 5px;
     border-width: 1px;
     border-style: solid;
     border-color: #ff2c55;
+    padding: 5px 5px 5px 5px;
 }
 
-
+/*Hero*/
 
 .hero{
     height: 85vh;
@@ -80,7 +82,9 @@ h2{
     font-size:72px;
 }
 .frase{
-    color: white
+    color: #FFEEEE;
+    font-size:xx-large;
+    padding-bottom:5vh;
 }
 .registroBoton a{
     display: flex;
@@ -89,12 +93,13 @@ h2{
     border-width: 1px;
     border-style: solid;
     border-color: #ff2c55;
-    width: 100px;
-    height: 8vh;
+    width: 130%;
+    height: 10vh;
     align-items: center;
     justify-content: center;
     text-decoration: none;
     color: white;
+    font-weight: bold;
 }
 
 .titulo{
@@ -139,6 +144,23 @@ h2{
     background-color: #ff2c55;
     border-radius: 50px;
 }
+.img1{
+    background-image:url(/imagenes/istockphoto-1569285773-612x612.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position-x:center;
+}
+.img2{
+    background-image:url(/imagenes/likedes.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:-50px 0;
+}
+.img3{
+    background-image:url(/imagenes/personas-otorgan-valoraciones-comentarios-sobre-resenas-calificacion-revision-cliente-comentarios-aplicacion-movil-cinco-estrellas_293114-253.avif);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
 .descripcion{
     align-self: center;
     padding-left: 20px;
@@ -165,6 +187,24 @@ h2{
     border-radius: 50px;
     align-self: center;
 }
+.imgC1{
+    background-image:url(/imagenes/mujer-sonriente-su-smartphone_63239-428.avif);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: -130px 0;
+}
+.imgC2{
+    background-image:url(/imagenes/movilAmarillo.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: -130px 0;
+}
+.imgC3{
+    background-image:url(/imagenes/cita.webp);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
 .paso{
     display: flex;
     flex-direction: column;
@@ -181,7 +221,7 @@ h2{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-top: 20vh;
+    margin-top: 10vh;
 }
 .Resenha{
     width: 287px;
@@ -219,10 +259,52 @@ h2{
 
 /*Call to action*/
 .callAct{
-    margin: 10% 10% 10% 10%;
+    display: flex;
+    flex-direction: row;
     background-color: #FFEEEE;
     border-color: #F5D9D9;
     border-radius: 50px;
-    border-width: 2px;
+    border-width: 5px;
     border-style: solid;
+    margin: 0;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    padding-left:3%;
+    padding-right:10%;
+    justify-content: space-between;
+    align-items: center;
+}
+.pruebaTitulo{
+    background-color:#68686800;
+    width: auto;
+}
+.argmento{
+    width:22%;
+}
+
+/*Footer*/
+.degradadoFin{
+    width: 100%;
+    height: 20vh;
+    background: linear-gradient(white, #F5D9D9);
+    
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    background-color: #F5D9D9;
+    padding-left: 5%;
+    padding-bottom: 5vh;
+    padding-top: 2vh;
+    justify-content: space-between;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+}
+.miniTit{
+    font-weight: bold;
 }
