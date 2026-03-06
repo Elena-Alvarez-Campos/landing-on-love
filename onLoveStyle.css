@@ -6,6 +6,11 @@ body{
     font-family: "Mulish", sans-serif;
     font-size: 20px;
 }
+a{
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
 header{
     background-color: #FFEEEE;
     width: 100%;
@@ -48,7 +53,19 @@ header{
     border-color: #ff2c55;
     padding: 5px 5px 5px 5px;
 }
-
+@media screen and (width <= 600px) {
+    header{
+        display: none;
+    }/*
+    .logo{
+        display: block;
+        width: 3vh;
+        height: 3vh;
+    }*/
+    .img2{
+        order:-1
+    }
+}
 /*Hero*/
 
 .hero{
@@ -86,6 +103,11 @@ h2{
     font-size:xx-large;
     padding-bottom:5vh;
 }
+@media screen and (width <= 600px) {
+    .frase{
+        font-size: large;
+    }
+}
 .registroBoton a{
     display: flex;
     background-color: #ff2c55;
@@ -93,7 +115,8 @@ h2{
     border-width: 1px;
     border-style: solid;
     border-color: #ff2c55;
-    width: 130%;
+    /*width: 130%;*/
+    width: 20vh;
     height: 10vh;
     align-items: center;
     justify-content: center;
@@ -109,6 +132,12 @@ h2{
     background-color: #FFEEEE;
     align-items: center;
     justify-content: center;
+}
+@media screen and (width <= 600px) {
+    h2.titulo{
+        font-size:xx-large;
+        text-align: center;
+    }
 }
 .subtitulo{
     color: #686868;
@@ -140,36 +169,53 @@ h2{
 }
 .imagen{
     height: 60vh;
-    width: 30%;
+    width: 60vh;
     background-color: #ff2c55;
     border-radius: 50px;
 }
 .img1{
-    background-image:url(/imagenes/istockphoto-1569285773-612x612.jpg);
+    background-image:url(imagenes/istockphoto-1569285773-612x612.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     background-position-x:center;
 }
 .img2{
-    background-image:url(/imagenes/likedes.jpg);
+    background-image:url(imagenes/likedes.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     background-position:-50px 0;
 }
 .img3{
-    background-image:url(/imagenes/personas-otorgan-valoraciones-comentarios-sobre-resenas-calificacion-revision-cliente-comentarios-aplicacion-movil-cinco-estrellas_293114-253.avif);
+    background-image:url(imagenes/personas-otorgan-valoraciones-comentarios-sobre-resenas-calificacion-revision-cliente-comentarios-aplicacion-movil-cinco-estrellas_293114-253.avif);
     background-repeat: no-repeat;
     background-size:cover;
 }
+
 .descripcion{
     align-self: center;
     padding-left: 20px;
     padding-right: 20px;
 }
+@media screen and (width <= 600px) {
+    .funcion{
+        flex-direction: column;
+        height: auto;
+        padding-top: 5vh;
+    }
+    .imagen{
+        max-width: 250px;
+        max-height: 250px;
+    }
+    .descripcion{
+        padding-left: 0;
+        padding-right: 0;
+        width: 30vh;
+    }
 
+}
 /*Como funciona*/
 .comoFun{
-    height: 100vh;
+    height: auto;
     width: 100%;
 }
 .comoFunTitulo{
@@ -188,19 +234,19 @@ h2{
     align-self: center;
 }
 .imgC1{
-    background-image:url(/imagenes/mujer-sonriente-su-smartphone_63239-428.avif);
+    background-image:url(imagenes/mujer-sonriente-su-smartphone_63239-428.avif);
     background-repeat: no-repeat;
     background-size:cover;
-    background-position: -130px 0;
+    background-position: 70% 0;
 }
 .imgC2{
-    background-image:url(/imagenes/movilAmarillo.jpg);
+    background-image:url(imagenes/movilAmarillo.jpg);
     background-repeat: no-repeat;
     background-size:cover;
-    background-position: -130px 0;
+    background-position: -50px 0;
 }
 .imgC3{
-    background-image:url(/imagenes/cita.webp);
+    background-image:url(imagenes/cita.webp);
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
@@ -209,6 +255,33 @@ h2{
     display: flex;
     flex-direction: column;
     width: 33%;
+}
+
+@media screen and (width <= 600px) {
+    .contenedorCF{
+        padding-top: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    .paso{
+        max-width: 300px;
+        padding-bottom: 4vh;
+        width: auto;
+    }
+    .imagenComo{
+        max-width: 100px;
+        max-height: 100px;
+        border-radius: 40%;
+    }
+    .subPaso{
+        font-size: larger;
+        display: flex;
+        flex-direction: column;
+    }
+    .paso .descripcion{
+        text-align: center;
+    }
+
 }
 
 /*Opiniones*/
@@ -257,6 +330,17 @@ h2{
     background-position:bottom;
 }
 
+@media screen and (width <= 600px) {
+    .contenedorOp{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        margin-top: 0;
+        height: 85vh;
+    }
+}
+
 /*Call to action*/
 .callAct{
     display: flex;
@@ -274,7 +358,7 @@ h2{
     padding-bottom: 5vh;
     padding-left:3%;
     padding-right:10%;
-    justify-content: space-between;
+    justify-items: center;
     align-items: center;
 }
 .pruebaTitulo{
@@ -283,6 +367,31 @@ h2{
 }
 .argmento{
     width:22%;
+}
+@media screen and (width <= 600px) {
+    .callAct{
+        flex-direction: column;
+        max-width: 300px;
+        border-width: 0.8vh;
+        padding:5vh;
+        margin-top: 3vh;
+    }
+    .pruebaTitulo{
+        font-size: xx-large;
+    }
+    .argmento{
+        width: auto;
+        text-align: center;
+        
+    }
+    .callAct .registroBoton{
+        align-self: center;
+    }
+    .callAct .argmento{
+        padding-bottom: 2vh;
+    }
+    
+
 }
 
 /*Footer*/
@@ -307,4 +416,16 @@ footer{
 }
 .miniTit{
     font-weight: bold;
+}
+@media screen and (width <= 600px) {
+    footer{
+        font-size: small;
+        flex-direction: column;
+    }
+    .info{
+        padding-top: 10px;
+    }
+    .degradadoFin{
+        height: 10vh
+    }
 }
